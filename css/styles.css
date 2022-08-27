@@ -1,0 +1,199 @@
+body {
+  font-family: "Montserrat";
+}
+
+/* HEADERS */
+
+h1 {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+  /*margin-top: 3.75rem; Her way of making space was adding padding in the navbar but this works as well*/
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#title {
+  /*I kinda forgot that for (ID) you use # not the normal . that is used with classes.*/
+  background-color: #ff4c68;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* NAVIGATION BAR  ! */
+
+.navbar {
+  /*Here she targeted the entire navbar not just a specific branch of it*/
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+/*This is 1 way to add space between navbar items taken from stackoverflow.
+However it may affect viewing experience.
+.navbar-nav > li or ( just nav-item and she made it static nor responsive so no rems just pixels ){
+  padding-left: 1rem;
+  padding-right: 2rem;
+}*/
+
+/*  BUTTONS !  */
+
+.download-button {
+  margin-right: 2.5rem;
+}
+/*.btn {
+  margin-right: 2.5rem;
+
+  This method works as well the problem is when you need to customize other buttons it won't really work so it's much better to just add a custom class after all of your bootstrap classes
+}*/
+
+/*   IMAGE   ! */
+
+.img {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute; /* Btw from the flowchart you can just put position without any z-index*/
+  right: 30%;
+}
+
+/*  FEAUTURES !  */
+
+#features {
+  /*text-align: center*/
+  background-color: white;
+  padding: 7% 15%; /*btw her answer in order to get the proper alignment was a simple padding 7% 15%*/
+  position: relative;
+  z-index: 1;
+}
+
+.feature-class {
+  /*the second step was to add the text align in the class for the new columns though i wonder why it wasn't in the features id*/
+  text-align: center;
+  padding: 4.5%; /*This as well was added to make the sentences in 2 lines instead of 1*/
+}
+.icons {
+  font-size: 5rem;
+  padding-bottom: 1.125rem; /*margin can be used as well as usual don't forget*/
+  color: #ef8172;
+}
+
+.icons:hover {
+  color: #ff4c68;
+}
+
+.para1 {
+  color: #8f8f8f;
+  /*padding-bottom: 100px;*/
+}
+
+/* TESTIMONIALS !*/
+
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 10%;
+  margin: 1.25rem;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* PRESS ! */
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+  word-spacing: 2rem;
+}
+
+.press-image {
+  width: 15%;
+  margin-bottom: 2.5rem;
+}
+
+/* PRICING ! */
+#pricing {
+  text-align: center;
+  padding: 6.25rem;
+}
+
+.price-column {
+  padding: 3% 2%;
+}
+
+/* CALL TO ACTION (cta) !*/
+
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 2% 7% 10%;
+}
+
+.cta-header {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 7% 15%;
+} /*increaseing the font size by .5rem and line height to 1.5 can also be used to make the header in 2 lines instead of  basically just experiment*/
+
+/* FOOTER !*/
+#footer {
+  background-color: white;
+  text-align: center;
+  padding: 10%;
+}
+
+.footer-p {
+  color: #8f8f8f;
+}
+.footer-icons {
+  padding: 0px 10px 30px; /*once again margin can be used*/
+  font-size: 25px;
+}
+
+/* MEDIA QUERY (BREAKPOINT)*/
+@media (max-width: 1024px) {
+  #title {
+    text-align: center;
+  }
+
+  .img {
+    position: static;
+    transform: rotate(0);
+  }
+}
